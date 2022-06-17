@@ -16,8 +16,8 @@ T = TypeVar("T")
 
 
 class Genericized(Generic[T]):
-    ...
+    """This inherits ``Generic[T]``, and Sphinx shows that."""
 
 
 class AnyStrable(Generic[AnyStr]):
-    ...
+    """This inherits ``Generic[AnyStr]``, but Sphinx leaves off the `AnyStr`."""
